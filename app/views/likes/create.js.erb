@@ -1,0 +1,3 @@
+var new_like = $("<%= j(render @like) %>");
+$("#<%= dom_id(@like.photo) %>_likes").append(new_like);
+new_like.fadeIn();
